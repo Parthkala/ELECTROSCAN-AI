@@ -28,38 +28,38 @@
   - [x] Pytest test suite (`tests/test_detection.py`, `tests/test_api.py`)
   - [x] Commit: `M3: detection engine`
 
-- [ ] **M4: Review & Verify Hero Screen & Audit Log**
-  - [ ] Interactive canvas pan/zoom viewer with sheet tabs
-  - [ ] Bounding boxes with status styling (auto, flagged amber dashed, kept, rejected, manual)
-  - [ ] Click-to-source inspection with grid reference (e.g. B-4)
-  - [ ] Review Queue card mode with keyboard shortcuts
-  - [ ] "Add missing" manual detection tool
-  - [ ] Live threshold slider reclassifying items
-  - [ ] Audit log tracking every action
-  - [ ] Commit: `M4: review and verify complete with audit log`
+- [x] **M4: Review & Verify Hero Screen & Audit Log**
+  - [x] Interactive canvas pan/zoom viewer with sheet tabs
+  - [x] Bounding boxes with status styling (auto, flagged amber dashed, kept, rejected, manual)
+  - [x] Click-to-source inspection with grid reference (e.g. B-4)
+  - [x] Review Queue card mode with keyboard shortcuts
+  - [x] "Add missing" manual detection tool
+  - [x] Live threshold slider reclassifying items
+  - [x] Audit log tracking every action
+  - [x] Commit: `M4: review and verify complete with audit log`
 
-- [ ] **M5: Full Application Screens**
-  - [ ] Login screen (seeded user `parth` / `demo123`, no fake buttons)
-  - [ ] Dashboard with live DB KPI cards, 7-day bar chart, quick actions
-  - [ ] Upload & Process with drag & drop, 50MB limit, sample project cards
-  - [ ] Symbol Library with built-in templates, rates, and "Teach a Symbol" box-drag crop
-  - [ ] History screen with search, status pills, and project actions
-  - [ ] Settings screen (thresholds, unit rates, profile)
-  - [ ] Commit: `M5: login dashboard upload history symbol library settings`
+- [x] **M5: Full Application Screens**
+  - [x] Login screen (seeded user `parth` / `demo123`, no fake buttons)
+  - [x] Dashboard with live DB KPI cards, 7-day bar chart, quick actions
+  - [x] Upload & Process with drag & drop, 50MB limit, sample project cards
+  - [x] Symbol Library with built-in templates, rates, and "Teach a Symbol" box-drag crop
+  - [x] History screen with search, status pills, and project actions
+  - [x] Settings screen (thresholds, unit rates, profile)
+  - [x] Commit: `M5: login dashboard upload history symbol library settings`
 
-- [ ] **M6: Export & Benchmark**
-  - [ ] `backend/app/export.py`: Excel workbook with 3 tabs (Summary, Detections, Audit Log)
-  - [ ] CSV export
-  - [ ] ReportLab PDF takeoff report with annotated sheet images
-  - [ ] `backend/app/benchmark.py`: Honest precision/recall & review time comparisons
-  - [ ] Commit: `M6: export and benchmark`
+- [x] **M6: Export & Benchmark**
+  - [x] `backend/app/export.py`: Excel workbook with 3 tabs (Summary, Detections, Audit Log)
+  - [x] CSV export
+  - [x] ReportLab PDF takeoff report with annotated sheet images
+  - [x] `backend/app/benchmark.py`: Honest precision/recall & review time comparisons
+  - [x] Commit: `M6: export and benchmark`
 
-- [ ] **M7: Polish, Visual Verification & Final Fixes**
-  - [ ] Final UI styling pass against reference mockup (#0B3D91 sidebar, Inter, rounded-xl cards)
-  - [ ] Click-through verification on 1366x768 and 1920x1080 resolutions
-  - [ ] README.md and DEMO.md finalized
-  - [ ] Full end-to-end `python run.py` dry-run
-  - [ ] Commit: `M7: polish and demo-ready prototype`
+- [x] **M7: Polish, Visual Verification & Final Fixes**
+  - [x] Final UI styling pass against reference mockup (#0B3D91 sidebar, Inter, rounded-xl cards)
+  - [x] Click-through verification on 1366x768 and 1920x1080 resolutions
+  - [x] README.md and DEMO.md finalized
+  - [x] Full end-to-end `python run.py` dry-run
+  - [x] Commit: `M7: polish and demo-ready prototype`
 
 ---
-**Next action**: Build M4: Review & Verify Hero Screen endpoints and components with audit log.
+**Status**: Production prototype complete and verified demo-ready. Ready for startup competition tomorrow!
