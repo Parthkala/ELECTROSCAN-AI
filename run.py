@@ -8,9 +8,15 @@ import threading
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 
 def check_and_install_python_deps():
+    try:
+        import fastapi, uvicorn, pymupdf, cv2, numpy, openpyxl, reportlab
+        return
+    except ImportError:
+        pass
+
     req_file = os.path.join(PROJECT_ROOT, "requirements.txt")
     if os.path.isfile(req_file):
-        print("[ElectroScan AI] Checking Python dependencies...")
+        print("[ElectroScan AI] Installing required dependencies...")
         try:
             subprocess.run([sys.executable, "-m", "pip", "install", "-q", "-r", req_file], check=True)
             print("[ElectroScan AI] Python dependencies ready.")
