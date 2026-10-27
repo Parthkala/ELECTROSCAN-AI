@@ -10,8 +10,13 @@ import cv2
 import numpy as np
 
 DATA_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "data"))
-SAMPLES_DIR = os.path.join(DATA_DIR, "samples")
-TEMPLATES_DIR = os.path.join(DATA_DIR, "templates")
+# Vercel: writable storage in /tmp, read-only project files in DATA_DIR
+if os.environ.get("VERCEL"):
+    _WRITABLE = os.path.join("/tmp", "electroscan")
+else:
+    _WRITABLE = DATA_DIR
+SAMPLES_DIR = os.path.join(_WRITABLE, "samples")
+TEMPLATES_DIR = os.path.join(_WRITABLE, "templates")
 
 PAGE_WIDTH, PAGE_HEIGHT = landscape(A3)  # 1190.55 x 841.89 points
 
@@ -379,8 +384,19 @@ def generate_template_images():
         os.remove(temp_pdf)
 
 def ensure_sample_plan():
+    os.makedirs(SAMPLES_DIR, exist_ok=True)
     pdf_path = os.path.join(SAMPLES_DIR, "sample_electrical_plan.pdf")
     gt_path = os.path.join(SAMPLES_DIR, "ground_truth.json")
+
+    src_samples = os.path.join(DATA_DIR, "samples")
+    if os.path.isdir(src_samples) and src_samples != SAMPLES_DIR:
+        import shutil
+        for f in ["sample_electrical_plan.pdf", "ground_truth.json"]:
+            s_f = os.path.join(src_samples, f)
+            d_f = os.path.join(SAMPLES_DIR, f)
+            if os.path.isfile(s_f) and not os.path.isfile(d_f):
+                shutil.copy2(s_f, d_f)
+
     if not os.path.exists(pdf_path) or not os.path.exists(gt_path):
         generate_sample_pdf_and_ground_truth()
 

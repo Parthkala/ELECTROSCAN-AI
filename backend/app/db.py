@@ -4,7 +4,14 @@ import hashlib
 from datetime import datetime
 from typing import Optional, List, Dict, Any
 
-DB_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "data", "electroscan.db"))
+_PROJECT_DATA = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "data"))
+# Vercel serverless: writable storage is /tmp only
+if os.environ.get("VERCEL"):
+    _WRITABLE = os.path.join("/tmp", "electroscan")
+else:
+    _WRITABLE = _PROJECT_DATA
+
+DB_PATH = os.path.join(_WRITABLE, "electroscan.db")
 
 def get_db():
     os.makedirs(os.path.dirname(DB_PATH), exist_ok=True)
@@ -134,8 +141,16 @@ def init_db():
             ))
 
         # Seed symbols
-        template_base = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "data", "templates"))
+        template_base = os.path.join(_WRITABLE, "templates")
         os.makedirs(template_base, exist_ok=True)
+        src_templates = os.path.join(_PROJECT_DATA, "templates")
+        if os.path.isdir(src_templates):
+            import shutil
+            for t_file in os.listdir(src_templates):
+                src_f = os.path.join(src_templates, t_file)
+                dst_f = os.path.join(template_base, t_file)
+                if os.path.isfile(src_f) and not os.path.isfile(dst_f):
+                    shutil.copy2(src_f, dst_f)
 
         builtin_symbols = [
             ("lighting_fixture", "Lighting Fixture", "Lighting", 550.0, 0.80, os.path.join(template_base, "lighting_fixture.png")),

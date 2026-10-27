@@ -20,9 +20,9 @@ from .render import render_document, calculate_grid_ref
 from .detection import TemplateMatchingDetector
 from .export import generate_excel_export, generate_csv_export, generate_pdf_report
 from .benchmark import evaluate_project_benchmark
-from .sample_gen import ensure_sample_plan, SAMPLES_DIR, TEMPLATES_DIR, DATA_DIR
+from .sample_gen import ensure_sample_plan, SAMPLES_DIR, TEMPLATES_DIR, DATA_DIR, _WRITABLE
 
-UPLOADS_DIR = os.path.join(DATA_DIR, "uploads")
+UPLOADS_DIR = os.path.join(_WRITABLE, "uploads")
 os.makedirs(UPLOADS_DIR, exist_ok=True)
 
 # In-memory progress tracker for background takeoff jobs
