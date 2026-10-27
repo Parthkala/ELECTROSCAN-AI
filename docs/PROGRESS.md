@@ -21,12 +21,12 @@
   - [x] Built-in symbol template extraction
   - [x] Commit: `M2: sample generator, render pipeline, sheet viewer`
 
-- [ ] **M3: Detection Engine, Job Progress, Tests**
-  - [ ] `backend/app/detection.py` with `Detector` interface and multi-scale template matcher
-  - [ ] Background job queue with polling progress steps (Reading, Rendering, Detecting, Scoring, Building)
-  - [ ] Precision/recall verification on sample plan
-  - [ ] Pytest test suite (`tests/test_detection.py`, `tests/test_api.py`)
-  - [ ] Commit: `M3: detection engine`
+- [x] **M3: Detection Engine, Job Progress, Tests**
+  - [x] `backend/app/detection.py` with `Detector` interface and multi-scale template matcher
+  - [x] Background job queue with polling progress steps (Reading, Rendering, Detecting, Scoring, Building)
+  - [x] Precision/recall verification on sample plan
+  - [x] Pytest test suite (`tests/test_detection.py`, `tests/test_api.py`)
+  - [x] Commit: `M3: detection engine`
 
 - [ ] **M4: Review & Verify Hero Screen & Audit Log**
   - [ ] Interactive canvas pan/zoom viewer with sheet tabs
@@ -62,4 +62,4 @@
   - [ ] Commit: `M7: polish and demo-ready prototype`
 
 ---
-**Next action**: Build M3: Detection Engine (`detection.py`), job progress tracking, and precision/recall evaluation.
+**Next action**: Build M4: Review & Verify Hero Screen endpoints and components with audit log.
