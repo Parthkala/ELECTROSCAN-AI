@@ -1,0 +1,1317 @@
+{
+  "project_name": "Commercial Office - Level 2 (Sample)",
+  "sheets": [
+    {
+      "sheet_index": 0,
+      "sheet_name": "Sheet 1 - Lighting & Controls",
+      "symbols": [
+        {
+          "symbol_id": "switch",
+          "symbol_name": "Single-Pole Switch",
+          "bbox": [
+            0.2721,
+            0.782,
+            0.2862,
+            0.8019
+          ],
+          "grid_ref": "D-7",
+          "rotation": 180,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "switch",
+          "symbol_name": "Single-Pole Switch",
+          "bbox": [
+            0.5702,
+            0.8678,
+            0.5864,
+            0.8907
+          ],
+          "grid_ref": "G-8",
+          "rotation": 0,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "lighting_fixture",
+          "symbol_name": "Lighting Fixture",
+          "bbox": [
+            0.5438,
+            0.312,
+            0.5623,
+            0.3381
+          ],
+          "grid_ref": "G-3",
+          "rotation": 0,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "power_outlet",
+          "symbol_name": "Power Outlet (Duplex)",
+          "bbox": [
+            0.7567,
+            0.3282,
+            0.7727,
+            0.3508
+          ],
+          "grid_ref": "J-3",
+          "rotation": 180,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "lighting_fixture",
+          "symbol_name": "Lighting Fixture",
+          "bbox": [
+            0.1469,
+            0.5849,
+            0.1644,
+            0.6096
+          ],
+          "grid_ref": "B-5",
+          "rotation": 180,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "power_outlet",
+          "symbol_name": "Power Outlet (Duplex)",
+          "bbox": [
+            0.6903,
+            0.4586,
+            0.7074,
+            0.4828
+          ],
+          "grid_ref": "I-4",
+          "rotation": 0,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "power_outlet",
+          "symbol_name": "Power Outlet (Duplex)",
+          "bbox": [
+            0.7774,
+            0.393,
+            0.7929,
+            0.415
+          ],
+          "grid_ref": "J-4",
+          "rotation": 180,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "switch",
+          "symbol_name": "Single-Pole Switch",
+          "bbox": [
+            0.0997,
+            0.7103,
+            0.114,
+            0.7305
+          ],
+          "grid_ref": "B-6",
+          "rotation": 0,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "lighting_fixture",
+          "symbol_name": "Lighting Fixture",
+          "bbox": [
+            0.3864,
+            0.5238,
+            0.4061,
+            0.5516
+          ],
+          "grid_ref": "E-5",
+          "rotation": 0,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "lighting_fixture",
+          "symbol_name": "Lighting Fixture",
+          "bbox": [
+            0.6383,
+            0.3238,
+            0.6563,
+            0.3493
+          ],
+          "grid_ref": "H-3",
+          "rotation": 90,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "lighting_fixture",
+          "symbol_name": "Lighting Fixture",
+          "bbox": [
+            0.5201,
+            0.6934,
+            0.539,
+            0.72
+          ],
+          "grid_ref": "G-6",
+          "rotation": 90,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "power_outlet",
+          "symbol_name": "Power Outlet (Duplex)",
+          "bbox": [
+            0.6507,
+            0.2094,
+            0.6689,
+            0.2352
+          ],
+          "grid_ref": "H-2",
+          "rotation": 90,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "lighting_fixture",
+          "symbol_name": "Lighting Fixture",
+          "bbox": [
+            0.4047,
+            0.8375,
+            0.4242,
+            0.8652
+          ],
+          "grid_ref": "E-7",
+          "rotation": 180,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "switch",
+          "symbol_name": "Single-Pole Switch",
+          "bbox": [
+            0.2432,
+            0.4892,
+            0.2593,
+            0.512
+          ],
+          "grid_ref": "D-5",
+          "rotation": 180,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "switch",
+          "symbol_name": "Single-Pole Switch",
+          "bbox": [
+            0.1806,
+            0.291,
+            0.1956,
+            0.3122
+          ],
+          "grid_ref": "C-3",
+          "rotation": 180,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "switch",
+          "symbol_name": "Single-Pole Switch",
+          "bbox": [
+            0.3729,
+            0.0863,
+            0.3882,
+            0.108
+          ],
+          "grid_ref": "E-1",
+          "rotation": 270,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "power_outlet",
+          "symbol_name": "Power Outlet (Duplex)",
+          "bbox": [
+            0.8048,
+            0.7702,
+            0.8204,
+            0.7922
+          ],
+          "grid_ref": "J-7",
+          "rotation": 0,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "switch",
+          "symbol_name": "Single-Pole Switch",
+          "bbox": [
+            0.3928,
+            0.4118,
+            0.4077,
+            0.4329
+          ],
+          "grid_ref": "E-4",
+          "rotation": 0,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "power_outlet",
+          "symbol_name": "Power Outlet (Duplex)",
+          "bbox": [
+            0.6469,
+            0.7993,
+            0.6652,
+            0.8251
+          ],
+          "grid_ref": "H-7",
+          "rotation": 0,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "power_outlet",
+          "symbol_name": "Power Outlet (Duplex)",
+          "bbox": [
+            0.4511,
+            0.12,
+            0.4687,
+            0.1449
+          ],
+          "grid_ref": "F-2",
+          "rotation": 180,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "power_outlet",
+          "symbol_name": "Power Outlet (Duplex)",
+          "bbox": [
+            0.4975,
+            0.8059,
+            0.5158,
+            0.8317
+          ],
+          "grid_ref": "G-7",
+          "rotation": 90,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "switch",
+          "symbol_name": "Single-Pole Switch",
+          "bbox": [
+            0.5265,
+            0.2636,
+            0.5417,
+            0.285
+          ],
+          "grid_ref": "G-3",
+          "rotation": 90,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "lighting_fixture",
+          "symbol_name": "Lighting Fixture",
+          "bbox": [
+            0.0746,
+            0.1392,
+            0.0935,
+            0.1658
+          ],
+          "grid_ref": "B-2",
+          "rotation": 270,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "power_outlet",
+          "symbol_name": "Power Outlet (Duplex)",
+          "bbox": [
+            0.8192,
+            0.1267,
+            0.8352,
+            0.1493
+          ],
+          "grid_ref": "J-2",
+          "rotation": 90,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "power_outlet",
+          "symbol_name": "Power Outlet (Duplex)",
+          "bbox": [
+            0.1695,
+            0.5075,
+            0.1872,
+            0.5326
+          ],
+          "grid_ref": "C-5",
+          "rotation": 90,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "power_outlet",
+          "symbol_name": "Power Outlet (Duplex)",
+          "bbox": [
+            0.8935,
+            0.1407,
+            0.9104,
+            0.1645
+          ],
+          "grid_ref": "K-2",
+          "rotation": 270,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "switch",
+          "symbol_name": "Single-Pole Switch",
+          "bbox": [
+            0.4054,
+            0.3508,
+            0.4197,
+            0.3711
+          ],
+          "grid_ref": "E-3",
+          "rotation": 180,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "switch",
+          "symbol_name": "Single-Pole Switch",
+          "bbox": [
+            0.2542,
+            0.6205,
+            0.2692,
+            0.6417
+          ],
+          "grid_ref": "D-6",
+          "rotation": 90,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "lighting_fixture",
+          "symbol_name": "Lighting Fixture",
+          "bbox": [
+            0.1193,
+            0.3805,
+            0.138,
+            0.4071
+          ],
+          "grid_ref": "B-4",
+          "rotation": 0,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "lighting_fixture",
+          "symbol_name": "Lighting Fixture",
+          "bbox": [
+            0.4775,
+            0.4543,
+            0.4972,
+            0.4821
+          ],
+          "grid_ref": "F-4",
+          "rotation": 0,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "switch",
+          "symbol_name": "Single-Pole Switch",
+          "bbox": [
+            0.7387,
+            0.2401,
+            0.754,
+            0.2618
+          ],
+          "grid_ref": "I-3",
+          "rotation": 90,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "lighting_fixture",
+          "symbol_name": "Lighting Fixture",
+          "bbox": [
+            0.4243,
+            0.5133,
+            0.4434,
+            0.5402
+          ],
+          "grid_ref": "F-5",
+          "rotation": 180,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "switch",
+          "symbol_name": "Single-Pole Switch",
+          "bbox": [
+            0.1119,
+            0.3042,
+            0.1274,
+            0.3261
+          ],
+          "grid_ref": "B-3",
+          "rotation": 0,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "lighting_fixture",
+          "symbol_name": "Lighting Fixture",
+          "bbox": [
+            0.7578,
+            0.1992,
+            0.7754,
+            0.2242
+          ],
+          "grid_ref": "J-2",
+          "rotation": 90,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "switch",
+          "symbol_name": "Single-Pole Switch",
+          "bbox": [
+            0.4793,
+            0.7202,
+            0.4958,
+            0.7435
+          ],
+          "grid_ref": "F-6",
+          "rotation": 0,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "lighting_fixture",
+          "symbol_name": "Lighting Fixture",
+          "bbox": [
+            0.9114,
+            0.6779,
+            0.9288,
+            0.7024
+          ],
+          "grid_ref": "L-6",
+          "rotation": 0,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "power_outlet",
+          "symbol_name": "Power Outlet (Duplex)",
+          "bbox": [
+            0.1931,
+            0.6532,
+            0.2093,
+            0.6761
+          ],
+          "grid_ref": "C-6",
+          "rotation": 270,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "switch",
+          "symbol_name": "Single-Pole Switch",
+          "bbox": [
+            0.565,
+            0.4866,
+            0.5807,
+            0.5088
+          ],
+          "grid_ref": "G-4",
+          "rotation": 0,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "lighting_fixture",
+          "symbol_name": "Lighting Fixture",
+          "bbox": [
+            0.1175,
+            0.1949,
+            0.1345,
+            0.219
+          ],
+          "grid_ref": "B-2",
+          "rotation": 0,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "switch",
+          "symbol_name": "Single-Pole Switch",
+          "bbox": [
+            0.5961,
+            0.5552,
+            0.6106,
+            0.5756
+          ],
+          "grid_ref": "H-5",
+          "rotation": 0,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "switch",
+          "symbol_name": "Single-Pole Switch",
+          "bbox": [
+            0.2367,
+            0.3146,
+            0.2513,
+            0.3352
+          ],
+          "grid_ref": "C-3",
+          "rotation": 180,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "power_outlet",
+          "symbol_name": "Power Outlet (Duplex)",
+          "bbox": [
+            0.597,
+            0.4379,
+            0.6127,
+            0.4601
+          ],
+          "grid_ref": "H-4",
+          "rotation": 180,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "switch",
+          "symbol_name": "Single-Pole Switch",
+          "bbox": [
+            0.1747,
+            0.6122,
+            0.189,
+            0.6324
+          ],
+          "grid_ref": "C-5",
+          "rotation": 180,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "lighting_fixture",
+          "symbol_name": "Lighting Fixture",
+          "bbox": [
+            0.4375,
+            0.4522,
+            0.4555,
+            0.4778
+          ],
+          "grid_ref": "F-4",
+          "rotation": 90,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "switch",
+          "symbol_name": "Single-Pole Switch",
+          "bbox": [
+            0.8197,
+            0.68,
+            0.8349,
+            0.7015
+          ],
+          "grid_ref": "J-6",
+          "rotation": 180,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "switch",
+          "symbol_name": "Single-Pole Switch",
+          "bbox": [
+            0.3035,
+            0.7236,
+            0.3187,
+            0.7452
+          ],
+          "grid_ref": "D-6",
+          "rotation": 180,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "switch",
+          "symbol_name": "Single-Pole Switch",
+          "bbox": [
+            0.6085,
+            0.2223,
+            0.624,
+            0.2442
+          ],
+          "grid_ref": "H-2",
+          "rotation": 180,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "power_outlet",
+          "symbol_name": "Power Outlet (Duplex)",
+          "bbox": [
+            0.1983,
+            0.5347,
+            0.2159,
+            0.5596
+          ],
+          "grid_ref": "C-5",
+          "rotation": 180,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "switch",
+          "symbol_name": "Single-Pole Switch",
+          "bbox": [
+            0.8783,
+            0.3355,
+            0.8921,
+            0.355
+          ],
+          "grid_ref": "K-3",
+          "rotation": 0,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "lighting_fixture",
+          "symbol_name": "Lighting Fixture",
+          "bbox": [
+            0.373,
+            0.1354,
+            0.3926,
+            0.1631
+          ],
+          "grid_ref": "E-2",
+          "rotation": 90,
+          "is_distractor": false
+        }
+      ]
+    },
+    {
+      "sheet_index": 1,
+      "sheet_name": "Sheet 2 - Power Distribution & Receptacles",
+      "symbols": [
+        {
+          "symbol_id": "lighting_fixture",
+          "symbol_name": "Lighting Fixture",
+          "bbox": [
+            0.3578,
+            0.2559,
+            0.375,
+            0.2801
+          ],
+          "grid_ref": "E-3",
+          "rotation": 270,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "switch",
+          "symbol_name": "Single-Pole Switch",
+          "bbox": [
+            0.2806,
+            0.3209,
+            0.2947,
+            0.3409
+          ],
+          "grid_ref": "D-3",
+          "rotation": 90,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "switch",
+          "symbol_name": "Single-Pole Switch",
+          "bbox": [
+            0.3747,
+            0.8373,
+            0.3903,
+            0.8593
+          ],
+          "grid_ref": "E-7",
+          "rotation": 90,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "power_outlet",
+          "symbol_name": "Power Outlet (Duplex)",
+          "bbox": [
+            0.6816,
+            0.6496,
+            0.6988,
+            0.6739
+          ],
+          "grid_ref": "I-6",
+          "rotation": 0,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "power_outlet",
+          "symbol_name": "Power Outlet (Duplex)",
+          "bbox": [
+            0.539,
+            0.7381,
+            0.5552,
+            0.7611
+          ],
+          "grid_ref": "G-6",
+          "rotation": 180,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "power_outlet",
+          "symbol_name": "Power Outlet (Duplex)",
+          "bbox": [
+            0.5913,
+            0.649,
+            0.6087,
+            0.6735
+          ],
+          "grid_ref": "H-6",
+          "rotation": 90,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "lighting_fixture",
+          "symbol_name": "Lighting Fixture",
+          "bbox": [
+            0.4304,
+            0.4226,
+            0.4482,
+            0.4478
+          ],
+          "grid_ref": "F-4",
+          "rotation": 90,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "power_outlet",
+          "symbol_name": "Power Outlet (Duplex)",
+          "bbox": [
+            0.5014,
+            0.2503,
+            0.518,
+            0.2738
+          ],
+          "grid_ref": "G-3",
+          "rotation": 90,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "switch",
+          "symbol_name": "Single-Pole Switch",
+          "bbox": [
+            0.3057,
+            0.3572,
+            0.32,
+            0.3773
+          ],
+          "grid_ref": "D-3",
+          "rotation": 0,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "lighting_fixture",
+          "symbol_name": "Lighting Fixture",
+          "bbox": [
+            0.6398,
+            0.7092,
+            0.6593,
+            0.7368
+          ],
+          "grid_ref": "H-6",
+          "rotation": 90,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "lighting_fixture",
+          "symbol_name": "Lighting Fixture",
+          "bbox": [
+            0.5878,
+            0.2705,
+            0.6048,
+            0.2945
+          ],
+          "grid_ref": "H-3",
+          "rotation": 270,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "switch",
+          "symbol_name": "Single-Pole Switch",
+          "bbox": [
+            0.4875,
+            0.6965,
+            0.5028,
+            0.7182
+          ],
+          "grid_ref": "F-6",
+          "rotation": 270,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "lighting_fixture",
+          "symbol_name": "Lighting Fixture",
+          "bbox": [
+            0.7311,
+            0.7137,
+            0.7509,
+            0.7417
+          ],
+          "grid_ref": "I-6",
+          "rotation": 0,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "switch",
+          "symbol_name": "Single-Pole Switch",
+          "bbox": [
+            0.5421,
+            0.1511,
+            0.5573,
+            0.1726
+          ],
+          "grid_ref": "G-2",
+          "rotation": 0,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "lighting_fixture",
+          "symbol_name": "Lighting Fixture",
+          "bbox": [
+            0.8798,
+            0.1692,
+            0.8993,
+            0.1967
+          ],
+          "grid_ref": "K-2",
+          "rotation": 180,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "switch",
+          "symbol_name": "Single-Pole Switch",
+          "bbox": [
+            0.7781,
+            0.4498,
+            0.7942,
+            0.4727
+          ],
+          "grid_ref": "J-4",
+          "rotation": 270,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "switch",
+          "symbol_name": "Single-Pole Switch",
+          "bbox": [
+            0.2835,
+            0.6933,
+            0.2996,
+            0.7161
+          ],
+          "grid_ref": "D-6",
+          "rotation": 270,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "switch",
+          "symbol_name": "Single-Pole Switch",
+          "bbox": [
+            0.2974,
+            0.8316,
+            0.3124,
+            0.8529
+          ],
+          "grid_ref": "D-7",
+          "rotation": 90,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "power_outlet",
+          "symbol_name": "Power Outlet (Duplex)",
+          "bbox": [
+            0.1788,
+            0.7061,
+            0.1951,
+            0.7292
+          ],
+          "grid_ref": "C-6",
+          "rotation": 0,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "switch",
+          "symbol_name": "Single-Pole Switch",
+          "bbox": [
+            0.4199,
+            0.7273,
+            0.4343,
+            0.7476
+          ],
+          "grid_ref": "F-6",
+          "rotation": 270,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "switch",
+          "symbol_name": "Single-Pole Switch",
+          "bbox": [
+            0.8006,
+            0.2733,
+            0.8169,
+            0.2964
+          ],
+          "grid_ref": "J-3",
+          "rotation": 0,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "lighting_fixture",
+          "symbol_name": "Lighting Fixture",
+          "bbox": [
+            0.7094,
+            0.1996,
+            0.7294,
+            0.2278
+          ],
+          "grid_ref": "I-2",
+          "rotation": 180,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "power_outlet",
+          "symbol_name": "Power Outlet (Duplex)",
+          "bbox": [
+            0.4791,
+            0.5781,
+            0.496,
+            0.602
+          ],
+          "grid_ref": "F-5",
+          "rotation": 90,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "power_outlet",
+          "symbol_name": "Power Outlet (Duplex)",
+          "bbox": [
+            0.8544,
+            0.0983,
+            0.8719,
+            0.123
+          ],
+          "grid_ref": "K-1",
+          "rotation": 270,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "power_outlet",
+          "symbol_name": "Power Outlet (Duplex)",
+          "bbox": [
+            0.1313,
+            0.5457,
+            0.1484,
+            0.5699
+          ],
+          "grid_ref": "B-5",
+          "rotation": 0,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "lighting_fixture",
+          "symbol_name": "Lighting Fixture",
+          "bbox": [
+            0.3421,
+            0.5247,
+            0.359,
+            0.5487
+          ],
+          "grid_ref": "E-5",
+          "rotation": 270,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "power_outlet",
+          "symbol_name": "Power Outlet (Duplex)",
+          "bbox": [
+            0.0759,
+            0.4567,
+            0.092,
+            0.4795
+          ],
+          "grid_ref": "B-4",
+          "rotation": 270,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "power_outlet",
+          "symbol_name": "Power Outlet (Duplex)",
+          "bbox": [
+            0.7355,
+            0.3658,
+            0.7514,
+            0.3884
+          ],
+          "grid_ref": "I-4",
+          "rotation": 0,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "lighting_fixture",
+          "symbol_name": "Lighting Fixture",
+          "bbox": [
+            0.5963,
+            0.6994,
+            0.6138,
+            0.7241
+          ],
+          "grid_ref": "H-6",
+          "rotation": 0,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "lighting_fixture",
+          "symbol_name": "Lighting Fixture",
+          "bbox": [
+            0.3772,
+            0.401,
+            0.3959,
+            0.4274
+          ],
+          "grid_ref": "E-4",
+          "rotation": 90,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "switch",
+          "symbol_name": "Single-Pole Switch",
+          "bbox": [
+            0.0824,
+            0.6423,
+            0.0965,
+            0.6623
+          ],
+          "grid_ref": "B-6",
+          "rotation": 90,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "power_outlet",
+          "symbol_name": "Power Outlet (Duplex)",
+          "bbox": [
+            0.1247,
+            0.334,
+            0.1412,
+            0.3573
+          ],
+          "grid_ref": "B-3",
+          "rotation": 90,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "lighting_fixture",
+          "symbol_name": "Lighting Fixture",
+          "bbox": [
+            0.1624,
+            0.0946,
+            0.1816,
+            0.1216
+          ],
+          "grid_ref": "C-1",
+          "rotation": 180,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "power_outlet",
+          "symbol_name": "Power Outlet (Duplex)",
+          "bbox": [
+            0.0697,
+            0.5528,
+            0.0866,
+            0.5767
+          ],
+          "grid_ref": "A-5",
+          "rotation": 180,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "power_outlet",
+          "symbol_name": "Power Outlet (Duplex)",
+          "bbox": [
+            0.6704,
+            0.5394,
+            0.6885,
+            0.5651
+          ],
+          "grid_ref": "I-5",
+          "rotation": 270,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "switch",
+          "symbol_name": "Single-Pole Switch",
+          "bbox": [
+            0.4623,
+            0.2259,
+            0.4768,
+            0.2464
+          ],
+          "grid_ref": "F-2",
+          "rotation": 270,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "power_outlet",
+          "symbol_name": "Power Outlet (Duplex)",
+          "bbox": [
+            0.2997,
+            0.5272,
+            0.3176,
+            0.5525
+          ],
+          "grid_ref": "D-5",
+          "rotation": 0,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "switch",
+          "symbol_name": "Single-Pole Switch",
+          "bbox": [
+            0.3666,
+            0.6848,
+            0.382,
+            0.7066
+          ],
+          "grid_ref": "E-6",
+          "rotation": 270,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "switch",
+          "symbol_name": "Single-Pole Switch",
+          "bbox": [
+            0.5405,
+            0.4755,
+            0.5561,
+            0.4976
+          ],
+          "grid_ref": "G-4",
+          "rotation": 180,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "lighting_fixture",
+          "symbol_name": "Lighting Fixture",
+          "bbox": [
+            0.4697,
+            0.3148,
+            0.4889,
+            0.342
+          ],
+          "grid_ref": "F-3",
+          "rotation": 270,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "lighting_fixture",
+          "symbol_name": "Lighting Fixture",
+          "bbox": [
+            0.6334,
+            0.594,
+            0.6505,
+            0.6182
+          ],
+          "grid_ref": "H-5",
+          "rotation": 90,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "power_outlet",
+          "symbol_name": "Power Outlet (Duplex)",
+          "bbox": [
+            0.3243,
+            0.7065,
+            0.3409,
+            0.73
+          ],
+          "grid_ref": "D-6",
+          "rotation": 180,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "power_outlet",
+          "symbol_name": "Power Outlet (Duplex)",
+          "bbox": [
+            0.2252,
+            0.2957,
+            0.2408,
+            0.3178
+          ],
+          "grid_ref": "C-3",
+          "rotation": 90,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "switch",
+          "symbol_name": "Single-Pole Switch",
+          "bbox": [
+            0.9077,
+            0.219,
+            0.9241,
+            0.2422
+          ],
+          "grid_ref": "K-2",
+          "rotation": 180,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "power_outlet",
+          "symbol_name": "Power Outlet (Duplex)",
+          "bbox": [
+            0.6721,
+            0.7913,
+            0.688,
+            0.8136
+          ],
+          "grid_ref": "I-7",
+          "rotation": 0,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "lighting_fixture",
+          "symbol_name": "Lighting Fixture",
+          "bbox": [
+            0.1467,
+            0.8818,
+            0.1653,
+            0.9082
+          ],
+          "grid_ref": "B-8",
+          "rotation": 90,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "power_outlet",
+          "symbol_name": "Power Outlet (Duplex)",
+          "bbox": [
+            0.8946,
+            0.6887,
+            0.9112,
+            0.7122
+          ],
+          "grid_ref": "K-6",
+          "rotation": 90,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "lighting_fixture",
+          "symbol_name": "Lighting Fixture",
+          "bbox": [
+            0.4831,
+            0.4238,
+            0.5026,
+            0.4514
+          ],
+          "grid_ref": "F-4",
+          "rotation": 270,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "lighting_fixture",
+          "symbol_name": "Lighting Fixture",
+          "bbox": [
+            0.1323,
+            0.6917,
+            0.1496,
+            0.7162
+          ],
+          "grid_ref": "B-6",
+          "rotation": 180,
+          "is_distractor": false
+        },
+        {
+          "symbol_id": "power_outlet",
+          "symbol_name": "Power Outlet (Duplex)",
+          "bbox": [
+            0.7301,
+            0.5848,
+            0.7472,
+            0.609
+          ],
+          "grid_ref": "I-5",
+          "rotation": 90,
+          "is_distractor": false
+        }
+      ]
+    }
+  ]
+}

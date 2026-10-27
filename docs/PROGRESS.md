@@ -15,11 +15,11 @@
   - [x] Initial smoke test passing
   - [x] Commit: `M1: scaffold, run.py, health check, doc files, DB schema`
 
-- [ ] **M2: Sample Generator, Render Pipeline, Sheet Viewer**
-  - [ ] `backend/app/sample_gen.py` generating 2-sheet A3 PDF with vector symbols, noise, and `ground_truth.json`
-  - [ ] `backend/app/render.py` rendering PDF sheets to 150 DPI PNGs
-  - [ ] Built-in symbol template extraction
-  - [ ] Commit: `M2: sample generator, render pipeline, sheet viewer`
+- [x] **M2: Sample Generator, Render Pipeline, Sheet Viewer**
+  - [x] `backend/app/sample_gen.py` generating 2-sheet A3 PDF with vector symbols, noise, and `ground_truth.json`
+  - [x] `backend/app/render.py` rendering PDF sheets to 150 DPI PNGs
+  - [x] Built-in symbol template extraction
+  - [x] Commit: `M2: sample generator, render pipeline, sheet viewer`
 
 - [ ] **M3: Detection Engine, Job Progress, Tests**
   - [ ] `backend/app/detection.py` with `Detector` interface and multi-scale template matcher
@@ -62,4 +62,4 @@
   - [ ] Commit: `M7: polish and demo-ready prototype`
 
 ---
-**Next action**: Build M2: Sample Generator (`sample_gen.py`), Render Pipeline (`render.py`), and template extractor.
+**Next action**: Build M3: Detection Engine (`detection.py`), job progress tracking, and precision/recall evaluation.
