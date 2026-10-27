@@ -338,7 +338,7 @@ export default function Review({ projectId, user }) {
                         </div>
                         <div className="text-right">
                           <p className="font-bold text-slate-900">{verifiedQty} units</p>
-                          <p className="text-[11px] font-semibold text-emerald-600">${totalCost.toLocaleString('en-US', { minimumFractionDigits: 2 })}</p>
+                          <p className="text-[11px] font-semibold text-emerald-600">₹{totalCost.toLocaleString('en-IN', { minimumFractionDigits: 2 })}</p>
                         </div>
                       </div>
                     );

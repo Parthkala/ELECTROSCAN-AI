@@ -78,7 +78,7 @@ def generate_excel_export(project_id: str) -> io.BytesIO:
     ws1["A2"] = f"Project: {proj['name']} | Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} | Estimator: Parth Kala"
     ws1["A2"].font = subtitle_font
 
-    headers1 = ["Symbol Name", "Category", "Verified Qty", "Unit Rate ($)", "Total Amount ($)"]
+    headers1 = ["Symbol Name", "Category", "Verified Qty", "Unit Rate (₹)", "Total Amount (₹)"]
     for col_idx, h in enumerate(headers1, 1):
         cell = ws1.cell(row=4, column=col_idx, value=h)
         cell.fill = navy_fill
@@ -99,12 +99,12 @@ def generate_excel_export(project_id: str) -> io.BytesIO:
         
         c_rate = ws1.cell(row=row_num, column=4, value=rate)
         c_rate.font = regular_font
-        c_rate.number_format = '$#,##0.00'
+        c_rate.number_format = '"₹"#,##0.00'
         c_rate.alignment = Alignment(horizontal="right")
 
         c_amt = ws1.cell(row=row_num, column=5, value=amount)
         c_amt.font = bold_font
-        c_amt.number_format = '$#,##0.00'
+        c_amt.number_format = '"₹"#,##0.00'
         c_amt.alignment = Alignment(horizontal="right")
 
         for c in range(1, 6):
@@ -115,7 +115,7 @@ def generate_excel_export(project_id: str) -> io.BytesIO:
     ws1.cell(row=row_num, column=1, value="TOTAL ESTIMATE").font = bold_font
     ws1.cell(row=row_num, column=3, value=f"=SUM(C5:C{row_num-1})").font = bold_font
     ws1.cell(row=row_num, column=5, value=f"=SUM(E5:E{row_num-1})").font = bold_font
-    ws1.cell(row=row_num, column=5).number_format = '$#,##0.00'
+    ws1.cell(row=row_num, column=5).number_format = '"₹"#,##0.00'
     for c in range(1, 6):
         ws1.cell(row=row_num, column=c).border = thin_border
 
@@ -241,7 +241,7 @@ def generate_pdf_report(project_id: str) -> io.BytesIO:
     elements.append(Spacer(1, 10))
 
     # Table
-    table_data = [["Symbol", "Category", "Verified Count", "Unit Rate ($)", "Total Amount ($)"]]
+    table_data = [["Symbol", "Category", "Verified Count", "Unit Rate (₹)", "Total Amount (₹)"]]
     grand_total = 0.0
     for r in summary:
         qty = r["verified_qty"] or 0
@@ -252,10 +252,10 @@ def generate_pdf_report(project_id: str) -> io.BytesIO:
             r["name"],
             r["category"],
             str(qty),
-            f"${rate:.2f}",
-            f"${amt:,.2f}"
+            f"₹{rate:.2f}",
+            f"₹{amt:,.2f}"
         ])
-    table_data.append(["TOTAL ESTIMATED COST", "", "", "", f"${grand_total:,.2f}"])
+    table_data.append(["TOTAL ESTIMATED COST", "", "", "", f"₹{grand_total:,.2f}"])
 
     t = Table(table_data, colWidths=[180, 100, 80, 80, 100])
     t.setStyle(TableStyle([

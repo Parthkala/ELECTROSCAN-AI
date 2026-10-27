@@ -138,9 +138,9 @@ def init_db():
         os.makedirs(template_base, exist_ok=True)
 
         builtin_symbols = [
-            ("lighting_fixture", "Lighting Fixture", "Lighting", 45.0, 0.80, os.path.join(template_base, "lighting_fixture.png")),
-            ("power_outlet", "Power Outlet (Duplex)", "Receptacles", 32.5, 0.80, os.path.join(template_base, "power_outlet.png")),
-            ("switch", "Single-Pole Switch", "Controls", 28.0, 0.80, os.path.join(template_base, "switch.png")),
+            ("lighting_fixture", "Lighting Fixture", "Lighting", 550.0, 0.80, os.path.join(template_base, "lighting_fixture.png")),
+            ("power_outlet", "Power Outlet (Duplex)", "Receptacles", 300.0, 0.80, os.path.join(template_base, "power_outlet.png")),
+            ("switch", "Single-Pole Switch", "Controls", 200.0, 0.80, os.path.join(template_base, "switch.png")),
         ]
 
         for s_id, name, cat, rate, thresh, t_path in builtin_symbols:

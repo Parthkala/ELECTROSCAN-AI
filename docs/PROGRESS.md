@@ -61,5 +61,12 @@
   - [x] Full end-to-end `python run.py` dry-run
   - [x] Commit: `M7: polish and demo-ready prototype`
 
+- [x] **Post-M7: Sheet Zoom Fix & Indian Rupee Conversion**
+  - [x] CanvasViewer: changed `transformOrigin` to `0 0`, `overflow-auto`, initial scale 0.5, fit-to-container reset
+  - [x] All currency switched from USD ($) to INR (₹) — seed rates: ₹550/₹300/₹200
+  - [x] Export (Excel/PDF) uses ₹ formatting; frontend Review, Settings, SymbolLibrary updated
+  - [x] All 11 tests passing (29s)
+  - [x] Commit: `fix: sheet zoom-out visibility and convert to Indian Rupees`
+
 ---
 **Status**: Production prototype complete and verified demo-ready. Ready for startup competition tomorrow!

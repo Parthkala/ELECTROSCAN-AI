@@ -123,7 +123,7 @@ export default function Settings({ user }) {
                   <span className="text-[10px] text-slate-400">{s.category}</span>
                 </div>
                 <div className="flex items-center gap-1 w-32">
-                  <span className="text-xs text-slate-400 font-bold">$</span>
+                  <span className="text-xs text-slate-400 font-bold">₹</span>
                   <input
                     type="number"
                     step="0.5"

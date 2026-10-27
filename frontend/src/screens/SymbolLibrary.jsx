@@ -13,7 +13,7 @@ export default function SymbolLibrary() {
   const [showTeachModal, setShowTeachModal] = useState(false);
   const [teachName, setTeachName] = useState('');
   const [teachCategory, setTeachCategory] = useState('Custom Lighting');
-  const [teachRate, setTeachRate] = useState('55.00');
+  const [teachRate, setTeachRate] = useState('450.00');
   const [selectedSheetId, setSelectedSheetId] = useState('');
   const [availableSheets, setAvailableSheets] = useState([]);
 
@@ -163,7 +163,7 @@ export default function SymbolLibrary() {
                       }}
                       className="flex items-center gap-1 cursor-pointer group mt-0.5"
                     >
-                      <span className="text-base font-bold text-slate-900">${sym.default_unit_rate.toFixed(2)}</span>
+                      <span className="text-base font-bold text-slate-900">₹{sym.default_unit_rate.toFixed(2)}</span>
                       <Edit2 className="w-3.5 h-3.5 text-slate-400 group-hover:text-blue-600 transition" />
                     </div>
                   )}
@@ -212,7 +212,7 @@ export default function SymbolLibrary() {
               </div>
 
               <div>
-                <label className="block text-xs font-bold text-slate-700 mb-1">Estimated Unit Rate ($)</label>
+                <label className="block text-xs font-bold text-slate-700 mb-1">Estimated Unit Rate (₹)</label>
                 <input
                   type="number"
                   step="0.5"

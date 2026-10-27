@@ -27,7 +27,7 @@ export default function CanvasViewer({
   setManualSymbolId
 }) {
   const containerRef = useRef(null);
-  const [scale, setScale] = useState(1);
+  const [scale, setScale] = useState(0.5);
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [isDragging, setIsDragging] = useState(false);
   const [dragStart, setDragStart] = useState({ x: 0, y: 0 });
@@ -84,7 +84,14 @@ export default function CanvasViewer({
   };
 
   const handleReset = () => {
-    setScale(1);
+    if (containerRef.current && activeSheet) {
+      const cW = containerRef.current.clientWidth;
+      const imgW = activeSheet.width_px / 1.5;
+      const fitScale = Math.min(cW / imgW, 1);
+      setScale(fitScale);
+    } else {
+      setScale(0.5);
+    }
     setPosition({ x: 0, y: 0 });
     setFocusedDetection(null);
   };
@@ -217,7 +224,7 @@ export default function CanvasViewer({
         onMouseDown={handleMouseDown}
         onMouseMove={handleMouseMove}
         onMouseUp={handleMouseUp}
-        className={`flex-1 relative overflow-hidden bg-slate-950 flex items-center justify-center ${
+        className={`flex-1 relative overflow-auto bg-slate-950 ${
           isManualMode ? 'cursor-crosshair' : (isDragging ? 'cursor-grabbing' : 'cursor-grab')
         }`}
       >
@@ -225,7 +232,7 @@ export default function CanvasViewer({
           <div
             style={{
               transform: `translate(${position.x}px, ${position.y}px) scale(${scale})`,
-              transformOrigin: 'center center',
+              transformOrigin: '0 0',
               transition: isDragging ? 'none' : 'transform 0.15s ease-out'
             }}
             className="relative shadow-2xl rounded-sm overflow-hidden"
