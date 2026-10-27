@@ -2,18 +2,18 @@
 
 ## Milestone Checklist
 
-- [ ] **M0: Project Setup & Documentation Baseline**
+- [x] **M0: Project Setup & Documentation Baseline**
   - [x] Directory structure and git repository initialized
   - [x] AGENTS.md and GEMINI.md created with team conventions
   - [x] docs/ARCHITECTURE.md, docs/API.md, docs/DATA_MODEL.md, docs/DECISIONS.md, docs/HANDOFF_PROMPT.md written
-  - [ ] Commit initial documentation baseline
+  - [x] Commit initial documentation baseline
 
-- [ ] **M1: Scaffold, run.py, Health Check, DB Schema**
-  - [ ] SQLite database setup (`backend/app/db.py`) with all tables and seed data
-  - [ ] FastAPI app (`backend/app/main.py`) with `/api/health`, auth, and core endpoints
-  - [ ] Single-command launcher (`run.py` & `run.bat`)
-  - [ ] Initial smoke test passing
-  - [ ] Commit: `M1: scaffold, run.py, health check, doc files, DB schema`
+- [x] **M1: Scaffold, run.py, Health Check, DB Schema**
+  - [x] SQLite database setup (`backend/app/db.py`) with all tables and seed data
+  - [x] FastAPI app (`backend/app/main.py`) with `/api/health`, auth, and core endpoints
+  - [x] Single-command launcher (`run.py` & `run.bat`)
+  - [x] Initial smoke test passing
+  - [x] Commit: `M1: scaffold, run.py, health check, doc files, DB schema`
 
 - [ ] **M2: Sample Generator, Render Pipeline, Sheet Viewer**
   - [ ] `backend/app/sample_gen.py` generating 2-sheet A3 PDF with vector symbols, noise, and `ground_truth.json`
@@ -62,4 +62,4 @@
   - [ ] Commit: `M7: polish and demo-ready prototype`
 
 ---
-**Next action**: Complete M0 documentation suite (ARCHITECTURE.md, API.md, DATA_MODEL.md, DECISIONS.md, HANDOFF_PROMPT.md), then commit baseline.
+**Next action**: Build M2: Sample Generator (`sample_gen.py`), Render Pipeline (`render.py`), and template extractor.
