@@ -28,29 +28,39 @@ export default function CanvasViewer({
 }) {
   const containerRef = useRef(null);
   const [scale, setScale] = useState(0.5);
-  const [position, setPosition] = useState({ x: 0, y: 0 });
   const [isDragging, setIsDragging] = useState(false);
   const [dragStart, setDragStart] = useState({ x: 0, y: 0 });
   const [imageLoaded, setImageLoaded] = useState(false);
 
   const activeSheet = sheets.find(s => s.id === activeSheetId) || sheets[0];
   const sheetDetections = detections.filter(d => d.sheet_id === activeSheet?.id);
+  const baseWidth = activeSheet ? activeSheet.width_px / 1.5 : 800;
+
+  // Fit-to-width on first image load or sheet change
+  useEffect(() => {
+    if (imageLoaded && containerRef.current && activeSheet) {
+      const cW = containerRef.current.clientWidth;
+      setScale(Math.min(cW / baseWidth, 1));
+    }
+  }, [imageLoaded, activeSheet?.id]);
 
   // Focus and zoom when focusedDetection changes
   useEffect(() => {
     if (focusedDetection && focusedDetection.sheet_id === activeSheet?.id && containerRef.current) {
       const container = containerRef.current;
-      const cW = container.clientWidth;
-      const cH = container.clientHeight;
-
-      const dX = (focusedDetection.bbox_x0 + focusedDetection.bbox_x1) / 2.0;
-      const dY = (focusedDetection.bbox_y0 + focusedDetection.bbox_y1) / 2.0;
-
       const targetScale = 2.4;
       setScale(targetScale);
-      setPosition({
-        x: cW / 2 - dX * (activeSheet.width_px * (cW / activeSheet.width_px)) * targetScale,
-        y: cH / 2 - dY * (activeSheet.height_px * (cW / activeSheet.width_px)) * targetScale
+      // scroll to center the detection after React re-renders with new scale
+      requestAnimationFrame(() => {
+        const imgW = baseWidth * targetScale;
+        const imgH = (activeSheet.height_px / 1.5) * targetScale;
+        const cx = (focusedDetection.bbox_x0 + focusedDetection.bbox_x1) / 2;
+        const cy = (focusedDetection.bbox_y0 + focusedDetection.bbox_y1) / 2;
+        container.scrollTo({
+          left: cx * imgW - container.clientWidth / 2,
+          top: cy * imgH - container.clientHeight / 2,
+          behavior: 'smooth'
+        });
       });
     }
   }, [focusedDetection, activeSheet]);
@@ -58,24 +68,26 @@ export default function CanvasViewer({
   const handleWheel = (e) => {
     e.preventDefault();
     const zoomFactor = e.deltaY < 0 ? 1.15 : 0.85;
-    setScale(prev => Math.min(Math.max(prev * zoomFactor, 0.4), 6.0));
+    setScale(prev => Math.min(Math.max(prev * zoomFactor, 0.15), 6.0));
   };
 
+  // Drag-to-scroll panning
   const handleMouseDown = (e) => {
     if (isManualMode) {
       handleManualAddClick(e);
       return;
     }
     setIsDragging(true);
-    setDragStart({ x: e.clientX - position.x, y: e.clientY - position.y });
+    setDragStart({
+      x: e.clientX + containerRef.current.scrollLeft,
+      y: e.clientY + containerRef.current.scrollTop
+    });
   };
 
   const handleMouseMove = (e) => {
-    if (isDragging) {
-      setPosition({
-        x: e.clientX - dragStart.x,
-        y: e.clientY - dragStart.y
-      });
+    if (isDragging && containerRef.current) {
+      containerRef.current.scrollLeft = dragStart.x - e.clientX;
+      containerRef.current.scrollTop = dragStart.y - e.clientY;
     }
   };
 
@@ -86,26 +98,28 @@ export default function CanvasViewer({
   const handleReset = () => {
     if (containerRef.current && activeSheet) {
       const cW = containerRef.current.clientWidth;
-      const imgW = activeSheet.width_px / 1.5;
-      const fitScale = Math.min(cW / imgW, 1);
-      setScale(fitScale);
+      setScale(Math.min(cW / baseWidth, 1));
+      containerRef.current.scrollTo(0, 0);
     } else {
       setScale(0.5);
     }
-    setPosition({ x: 0, y: 0 });
     setFocusedDetection(null);
   };
 
   const handleManualAddClick = (e) => {
     if (!containerRef.current || !activeSheet) return;
-    const rect = containerRef.current.getBoundingClientRect();
-    const clickX = (e.clientX - rect.left - position.x) / scale;
-    const clickY = (e.clientY - rect.top - position.y) / scale;
+    const container = containerRef.current;
+    const rect = container.getBoundingClientRect();
+    const imgW = baseWidth * scale;
+    const imgH = (activeSheet.height_px / 1.5) * scale;
 
-    const normX = clickX / rect.width;
-    const normY = clickY / rect.height;
+    const clickX = e.clientX - rect.left + container.scrollLeft;
+    const clickY = e.clientY - rect.top + container.scrollTop;
 
-    const boxSize = 0.025; // standard box size
+    const normX = clickX / imgW;
+    const normY = clickY / imgH;
+
+    const boxSize = 0.025;
     const bbox = [
       Math.max(0, normX - boxSize / 2),
       Math.max(0, normY - boxSize / 2),
@@ -230,19 +244,14 @@ export default function CanvasViewer({
       >
         {activeSheet ? (
           <div
-            style={{
-              transform: `translate(${position.x}px, ${position.y}px) scale(${scale})`,
-              transformOrigin: '0 0',
-              transition: isDragging ? 'none' : 'transform 0.15s ease-out'
-            }}
-            className="relative shadow-2xl rounded-sm overflow-hidden"
+            style={{ width: `${baseWidth * scale}px` }}
+            className="relative shadow-2xl rounded-sm"
           >
             <img
               src={`/api/sheets/${activeSheet.id}/image`}
               alt={activeSheet.name}
               onLoad={() => setImageLoaded(true)}
-              className="max-w-none pointer-events-none select-none block"
-              style={{ width: `${activeSheet.width_px / 1.5}px` }}
+              className="w-full pointer-events-none select-none block"
             />
 
             {/* Bounding Boxes Layer */}
