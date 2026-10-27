@@ -6,3 +6,6 @@ node_modules/
 dist/
 build/
 .env
+data/electroscan.db
+data/uploads/
+data/samples/rendered/

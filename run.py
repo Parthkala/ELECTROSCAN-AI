@@ -69,11 +69,16 @@ def main():
     build_frontend_if_needed()
     ensure_sample_and_db()
 
-    threading.Thread(target=open_browser, daemon=True).start()
+    port = int(os.environ.get("PORT", 8000))
+    host = os.environ.get("HOST", "127.0.0.1")
+
+    # Only open browser when running locally
+    if host == "127.0.0.1":
+        threading.Thread(target=open_browser, daemon=True).start()
 
     import uvicorn
-    print("\n[ElectroScan AI] Starting server at http://127.0.0.1:8000 ...\n")
-    uvicorn.run("backend.app.main:app", host="127.0.0.1", port=8000, reload=False, log_level="info")
+    print(f"\n[ElectroScan AI] Starting server at http://{host}:{port} ...\n")
+    uvicorn.run("backend.app.main:app", host=host, port=port, reload=False, log_level="info")
 
 if __name__ == "__main__":
     main()
