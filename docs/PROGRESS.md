@@ -68,5 +68,11 @@
   - [x] All 11 tests passing (29s)
   - [x] Commit: `fix: sheet zoom-out visibility and convert to Indian Rupees`
 
+- [x] **Live Cloud Deployment: Vercel**
+  - [x] Pushed codebase to `https://github.com/Parthkala/ELECTROSCAN-AI`
+  - [x] Configured `vercel.json` with FastAPI service entrypoint and public asset proxy
+  - [x] Adapted SQLite DB, sample plan, and template paths for serverless `/tmp` filesystem
+  - [x] Deployed and verified live at `https://electroscan-ai.vercel.app`
+
 ---
 **Status**: Production prototype complete and verified demo-ready. Ready for startup competition tomorrow!
